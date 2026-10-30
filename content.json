@@ -563,17 +563,20 @@
       {
         "label": "WhatsApp",
         "value": "+66 93 638 5375",
-        "href": "https://wa.me/66936385375"
+        "href": "https://wa.me/66936385375",
+        "copy": true
       },
       {
         "label": "Instagram",
         "value": "@follow_the_ana_",
-        "href": "https://www.instagram.com/follow_the_ana_/"
+        "href": "https://www.instagram.com/follow_the_ana_/",
+        "copy": true
       },
       {
         "label": "YouTube",
         "value": "@AnaKo96",
-        "href": "https://www.youtube.com/@anako96"
+        "href": "https://www.youtube.com/@anako96",
+        "copy": true
       }
     ],
     "facts": [
