@@ -18,8 +18,8 @@
     {
       "id": "h1",
       "media": "video",
-      "src": "media/hero/transition-loop.mp4",
-      "poster": "media/hero/transition-loop.jpg",
+      "src": "hero/transition-loop.mp4",
+      "poster": "hero/transition-loop.jpg",
       "title": "The Transition",
       "subtitle": "Film / Music / Direction",
       "meta": "2026",
@@ -28,8 +28,8 @@
     {
       "id": "h2",
       "media": "video",
-      "src": "media/hero/kimc-loop.mp4",
-      "poster": "media/hero/kimc-loop.jpg",
+      "src": "hero/kimc-loop.mp4",
+      "poster": "hero/kimc-loop.jpg",
       "title": "Kawai International",
       "subtitle": "Performance",
       "meta": "Thailand, 2026",
@@ -39,7 +39,7 @@
     {
       "id": "h3",
       "media": "cover",
-      "src": "media/covers/shostakovich-pf-24.jpg",
+      "src": "covers/shostakovich-pf-24.jpg",
       "title": "Shostakovich",
       "subtitle": "Prelude and Fugue No. 24",
       "meta": "Performance",
@@ -48,7 +48,7 @@
     {
       "id": "h4",
       "media": "quote",
-      "src": "media/photos/cover-letter-photo.jpg",
+      "src": "photos/cover-letter-photo.jpg",
       "quote": "This performance reflects rigorous preparation, a deep understanding of Shostakovich’s musical language, and outstanding pianistic authority.",
       "title": "Jury comments",
       "subtitle": "Shostakovich, Prelude and Fugue No. 24",
@@ -58,7 +58,7 @@
     {
       "id": "h5",
       "media": "image",
-      "src": "media/stills/still_10.jpg",
+      "src": "stills/still_10.jpg",
       "title": "The Transition",
       "subtitle": "Official Selection",
       "meta": "Almamoura Festival · Lift-Off Global Network Sessions · Screamstation Fest — 2026",
@@ -67,7 +67,7 @@
     {
       "id": "h6",
       "media": "cover",
-      "src": "media/covers/chopin-op25-12.jpg",
+      "src": "covers/chopin-op25-12.jpg",
       "title": "Chopin",
       "subtitle": "Étude Op. 25 No. 12",
       "meta": "Follow The Ana & Nikita Kushaev",
@@ -76,7 +76,7 @@
     {
       "id": "h7",
       "media": "quote",
-      "src": "media/photos/kimc-2026-1.jpg",
+      "src": "photos/kimc-2026-1.jpg",
       "quote": "Beautiful musical shape with an improvisatory nature.",
       "title": "Jury comments",
       "subtitle": "KIMC 2026",
@@ -86,7 +86,7 @@
     {
       "id": "h8",
       "media": "image",
-      "src": "media/stills/still_14.jpg",
+      "src": "stills/still_14.jpg",
       "title": "The Transition",
       "subtitle": "Stills",
       "meta": "2026",
@@ -100,8 +100,8 @@
       "composer": "Frédéric Chopin",
       "title": "Étude in C minor, Op. 25 No. 12",
       "credit": "Follow The Ana & Nikita Kushaev",
-      "cover": "media/covers/chopin-op25-12.jpg",
-      "src": "media/audio/chopin-op25-12.mp3",
+      "cover": "covers/chopin-op25-12.jpg",
+      "src": "chopin-op25-12.mp3",
       "duration": "2:51",
       "spotify": ""
     },
@@ -111,8 +111,8 @@
       "composer": "Dmitri Shostakovich",
       "title": "Prelude and Fugue No. 24 in D minor, Op. 87",
       "credit": "",
-      "cover": "media/covers/shostakovich-pf-24.jpg",
-      "src": "media/audio/shostakovich-pf-24.mp3",
+      "cover": "covers/shostakovich-pf-24.jpg",
+      "src": "shostakovich-pf-24.mp3",
       "duration": "12:25",
       "spotify": ""
     },
@@ -122,8 +122,8 @@
       "composer": "Kawai International",
       "title": "Performance, Thailand, 2026 (1/2)",
       "credit": "",
-      "cover": "media/video/kimc-2026-a.jpg",
-      "src": "media/video/kimc-2026-a.mp4",
+      "cover": "video/kimc-2026-a.jpg",
+      "src": "video/kimc-2026-a.mp4",
       "duration": "0:44",
       "ratio": "3/4"
     },
@@ -133,8 +133,8 @@
       "composer": "Joseph Haydn",
       "title": "Piano Sonata in E-flat major, Hob. XVI:49",
       "credit": "",
-      "cover": "media/covers/haydn-hob-xvi-49.jpg",
-      "src": "media/audio/haydn-hob-xvi-49.mp3",
+      "cover": "covers/haydn-hob-xvi-49.jpg",
+      "src": "haydn-hob-xvi-49.mp3",
       "duration": "16:14",
       "spotify": ""
     },
@@ -144,8 +144,8 @@
       "composer": "The Transition",
       "title": "Trailer",
       "credit": "",
-      "cover": "media/stills/still_01.jpg",
-      "src": "media/video/the-transition-trailer.mp4",
+      "cover": "stills/still_01.jpg",
+      "src": "video/the-transition-trailer.mp4",
       "duration": "0:36",
       "ratio": "16/9"
     },
@@ -155,8 +155,8 @@
       "composer": "Nikolai Medtner",
       "title": "Sonata Reminiscenza in A minor, Op. 38 No. 1",
       "credit": "",
-      "cover": "media/covers/medtner-reminiscenza.jpg",
-      "src": "media/audio/medtner-reminiscenza.mp3",
+      "cover": "covers/medtner-reminiscenza.jpg",
+      "src": "medtner-reminiscenza.mp3",
       "duration": "13:22",
       "spotify": ""
     },
@@ -166,8 +166,8 @@
       "composer": "Kawai International",
       "title": "Performance, Thailand, 2026 (2/2)",
       "credit": "",
-      "cover": "media/video/kimc-2026-b.jpg",
-      "src": "media/video/kimc-2026-b.mp4",
+      "cover": "video/kimc-2026-b.jpg",
+      "src": "video/kimc-2026-b.mp4",
       "duration": "0:35",
       "ratio": "3/4"
     },
@@ -177,8 +177,8 @@
       "composer": "Enrique Granados",
       "title": "Spanish Dances Nos. 1, 2, 3, 5",
       "credit": "",
-      "cover": "media/covers/granados-spanish-dances.jpg",
-      "src": "media/audio/granados-spanish-dances.mp3",
+      "cover": "covers/granados-spanish-dances.jpg",
+      "src": "granados-spanish-dances.mp3",
       "duration": "13:04",
       "spotify": ""
     },
@@ -188,8 +188,8 @@
       "composer": "Dmitri Shostakovich",
       "title": "Prelude and Fugue No. 4 in E minor, Op. 87",
       "credit": "",
-      "cover": "media/covers/shostakovich-pf-4.jpg",
-      "src": "media/audio/shostakovich-pf-4.mp3",
+      "cover": "covers/shostakovich-pf-4.jpg",
+      "src": "shostakovich-pf-4.mp3",
       "duration": "8:16",
       "spotify": ""
     }
@@ -410,8 +410,8 @@
     "credit": "Author, director and producer — Anastasia Kosheleva",
     "synopsis": "A dialogue-free work inspired by the inner experience of emigration during wartime. The film is built around Anastasia’s performance of Chopin’s Étude Op. 25 No. 12 and the visual contrast between warmth, isolation, movement, and a sense of liminal space.",
     "trailer": {
-      "src": "media/video/the-transition-trailer.mp4",
-      "poster": "media/stills/still_01.jpg",
+      "src": "video/the-transition-trailer.mp4",
+      "poster": "stills/still_01.jpg",
       "duration": "0:36"
     },
     "laurels": [
@@ -431,25 +431,25 @@
         "year": "2026"
       }
     ],
-    "poster": "media/press/transition-poster.jpg",
+    "poster": "press/transition-poster.jpg",
     "stills": [
-      "media/stills/still_01.jpg",
-      "media/stills/still_06.jpg",
-      "media/stills/still_12.jpg",
-      "media/stills/still_10.jpg",
-      "media/stills/still_13.jpg",
-      "media/stills/still_03.jpg",
-      "media/stills/still_17.jpg",
-      "media/stills/still_18.jpg",
-      "media/stills/still_23.jpg",
-      "media/stills/still_07.jpg",
-      "media/stills/still_19.jpg",
-      "media/stills/still_25.jpg"
+      "stills/still_01.jpg",
+      "stills/still_06.jpg",
+      "stills/still_12.jpg",
+      "stills/still_10.jpg",
+      "stills/still_13.jpg",
+      "stills/still_03.jpg",
+      "stills/still_17.jpg",
+      "stills/still_18.jpg",
+      "stills/still_23.jpg",
+      "stills/still_07.jpg",
+      "stills/still_19.jpg",
+      "stills/still_25.jpg"
     ],
     "bts": {
       "title": "Behind the scenes",
-      "src": "media/video/the-transition-bts.mp4",
-      "poster": "media/video/the-transition-bts.jpg",
+      "src": "video/the-transition-bts.mp4",
+      "poster": "video/the-transition-bts.jpg",
       "duration": "0:19"
     },
     "filmfreeway": ""
@@ -457,7 +457,7 @@
   "aiFilms": [],
   "education": [],
   "biography": {
-    "photo": "media/photos/kimc-2026-2.jpg",
+    "photo": "photos/kimc-2026-2.jpg",
     "photoAlt": "Anastasia Kosheleva at the piano, Kawai Thailand International Music Competition 2026",
     "paragraphs": [
       "Anastasia Kosheleva is a pianist, composer, director, and educator whose creative practice develops at the intersection of music, visual language, and storytelling.",
@@ -514,7 +514,7 @@
       "count": "",
       "source": "Shostakovich, Prelude and Fugue No. 24 in D minor, Op. 87 — PFA6, Piano Artist Group",
       "quote": "This performance reflects rigorous preparation, a deep understanding of Shostakovich’s musical language, and outstanding pianistic authority.",
-      "image": "media/press/jury-shostakovich-24.jpg"
+      "image": "press/jury-shostakovich-24.jpg"
     },
     {
       "id": "p2",
@@ -522,7 +522,7 @@
       "count": "",
       "source": "Kawai Thailand International Music Competition — jury comments",
       "quote": "Beautiful musical shape with an improvisatory nature. The touches were varied and the pacing was well judged.",
-      "image": "media/press/jury-kimc-2026.jpg"
+      "image": "press/jury-kimc-2026.jpg"
     },
     {
       "id": "p3",
@@ -530,7 +530,7 @@
       "count": "3",
       "source": "Official Selection — Almamoura Festival, Lift-Off Global Network Sessions, Screamstation Fest, 2026",
       "quote": "",
-      "image": "media/press/transition-poster.jpg"
+      "image": "press/transition-poster.jpg"
     },
     {
       "id": "p4",
@@ -538,7 +538,7 @@
       "count": "",
       "source": "Festival profile for The Transition",
       "quote": "",
-      "image": "media/press/director-biography.jpg"
+      "image": "press/director-biography.jpg"
     }
   ],
   "contact": {
