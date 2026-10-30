@@ -37,6 +37,16 @@
       "focus": "50% 65%"
     },
     {
+      "id": "h9",
+      "media": "poster",
+      "src": "photos/bacc-piano-recital.jpg",
+      "ratio": "1043/1508",
+      "title": "Piano Recital",
+      "subtitle": "Bangkok Art and Culture Centre",
+      "meta": "Bach · Rachmaninoff — Bangkok, Thailand",
+      "link": "work/performance"
+    },
+    {
       "id": "h3",
       "media": "cover",
       "src": "covers/shostakovich-pf-24.jpg",
@@ -592,7 +602,9 @@
         "label": "Languages",
         "value": "English · Russian"
       }
-    ]
+    ],
+    "video": "video/contact-loop.mp4",
+    "videoPoster": "video/contact-loop.jpg"
   },
   "emptyText": {
     "education": "Teaching videos, masterclasses and articles will appear here from November 2026.",
