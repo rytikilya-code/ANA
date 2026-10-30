@@ -23,7 +23,7 @@
       "title": "The Transition",
       "subtitle": "Film / Music / Direction",
       "meta": "2026",
-      "link": "video"
+      "link": "work/film"
     },
     {
       "id": "h2",
@@ -33,7 +33,7 @@
       "title": "Kawai International",
       "subtitle": "Performance",
       "meta": "Thailand, 2026",
-      "link": "music",
+      "link": "work/performance",
       "focus": "50% 65%"
     },
     {
@@ -43,7 +43,7 @@
       "title": "Shostakovich",
       "subtitle": "Prelude and Fugue No. 24",
       "meta": "Performance",
-      "link": "music"
+      "link": "work/music"
     },
     {
       "id": "h4",
@@ -53,7 +53,7 @@
       "title": "Jury comments",
       "subtitle": "Shostakovich, Prelude and Fugue No. 24",
       "meta": "PFA6 — Piano Artist Group",
-      "link": "biography"
+      "link": "about"
     },
     {
       "id": "h5",
@@ -62,7 +62,7 @@
       "title": "The Transition",
       "subtitle": "Official Selection",
       "meta": "Almamoura Festival · Lift-Off Global Network Sessions · Screamstation Fest — 2026",
-      "link": "video"
+      "link": "work/film"
     },
     {
       "id": "h6",
@@ -71,7 +71,7 @@
       "title": "Chopin",
       "subtitle": "Étude Op. 25 No. 12",
       "meta": "Follow The Ana & Nikita Kushaev",
-      "link": "music"
+      "link": "work/music"
     },
     {
       "id": "h7",
@@ -81,7 +81,7 @@
       "title": "Jury comments",
       "subtitle": "KIMC 2026",
       "meta": "Kawai Thailand International Music Competition",
-      "link": "biography"
+      "link": "about"
     },
     {
       "id": "h8",
@@ -90,13 +90,14 @@
       "title": "The Transition",
       "subtitle": "Stills",
       "meta": "2026",
-      "link": "video"
+      "link": "work/film"
     }
   ],
   "music": [
     {
       "id": "m1",
       "type": "audio",
+      "cat": "music",
       "composer": "Frédéric Chopin",
       "title": "Étude in C minor, Op. 25 No. 12",
       "credit": "Follow The Ana & Nikita Kushaev",
@@ -108,6 +109,7 @@
     {
       "id": "m2",
       "type": "audio",
+      "cat": "music",
       "composer": "Dmitri Shostakovich",
       "title": "Prelude and Fugue No. 24 in D minor, Op. 87",
       "credit": "",
@@ -119,6 +121,7 @@
     {
       "id": "m3",
       "type": "video",
+      "cat": "performance",
       "composer": "Kawai International",
       "title": "Performance, Thailand, 2026 (1/2)",
       "credit": "",
@@ -130,6 +133,7 @@
     {
       "id": "m4",
       "type": "audio",
+      "cat": "music",
       "composer": "Joseph Haydn",
       "title": "Piano Sonata in E-flat major, Hob. XVI:49",
       "credit": "",
@@ -141,6 +145,7 @@
     {
       "id": "m5",
       "type": "video",
+      "cat": "music",
       "composer": "The Transition",
       "title": "Trailer",
       "credit": "",
@@ -152,6 +157,7 @@
     {
       "id": "m6",
       "type": "audio",
+      "cat": "music",
       "composer": "Nikolai Medtner",
       "title": "Sonata Reminiscenza in A minor, Op. 38 No. 1",
       "credit": "",
@@ -163,6 +169,7 @@
     {
       "id": "m7",
       "type": "video",
+      "cat": "performance",
       "composer": "Kawai International",
       "title": "Performance, Thailand, 2026 (2/2)",
       "credit": "",
@@ -174,6 +181,7 @@
     {
       "id": "m8",
       "type": "audio",
+      "cat": "music",
       "composer": "Enrique Granados",
       "title": "Spanish Dances Nos. 1, 2, 3, 5",
       "credit": "",
@@ -185,6 +193,7 @@
     {
       "id": "m9",
       "type": "audio",
+      "cat": "music",
       "composer": "Dmitri Shostakovich",
       "title": "Prelude and Fugue No. 4 in E minor, Op. 87",
       "credit": "",
