@@ -7,8 +7,8 @@
       "Pianist",
       "Composer",
       "Arranger",
-      "Director",
-      "Educator"
+      "Educator",
+      "Director"
     ],
     "cta": "Work with me",
     "whatsapp": "https://wa.me/66936385375",
@@ -16,91 +16,46 @@
   },
   "hero": [
     {
-      "id": "h1",
+      "id": "l1",
       "media": "video",
-      "src": "hero/transition-loop.mp4",
-      "poster": "hero/transition-loop.jpg",
-      "title": "The Transition",
-      "subtitle": "Film / Music / Direction",
-      "meta": "2026",
-      "link": "work/film"
+      "src": "home/hall.mp4",
+      "poster": "home/hall.jpg",
+      "title": "Concert hall",
+      "subtitle": "",
+      "meta": "",
+      "link": ""
     },
     {
-      "id": "h2",
+      "id": "l2",
       "media": "video",
-      "src": "hero/kimc-loop.mp4",
-      "poster": "hero/kimc-loop.jpg",
-      "title": "Kawai International",
-      "subtitle": "Performance",
-      "meta": "Thailand, 2026",
-      "link": "work/performance",
-      "focus": "50% 65%"
+      "src": "home/keys.mp4",
+      "poster": "home/keys.jpg",
+      "title": "Piano keys",
+      "subtitle": "",
+      "meta": "",
+      "link": "",
+      "focus": "50% 55%"
     },
     {
-      "id": "h9",
-      "media": "poster",
-      "src": "photos/bacc-piano-recital.jpg",
-      "ratio": "1043/1508",
-      "title": "Piano Recital",
-      "subtitle": "Bangkok Art and Culture Centre",
-      "meta": "Bach · Rachmaninoff — Bangkok, Thailand",
-      "link": "work/performance"
+      "id": "l3",
+      "media": "video",
+      "src": "home/pages.mp4",
+      "poster": "home/pages.jpg",
+      "title": "Burning score",
+      "subtitle": "",
+      "meta": "",
+      "link": ""
     },
     {
-      "id": "h3",
-      "media": "cover",
-      "src": "covers/shostakovich-pf-24.jpg",
-      "title": "Shostakovich",
-      "subtitle": "Prelude and Fugue No. 24",
-      "meta": "Performance",
-      "link": "work/music"
-    },
-    {
-      "id": "h4",
-      "media": "quote",
-      "src": "photos/cover-letter-photo.jpg",
-      "quote": "This performance reflects rigorous preparation, a deep understanding of Shostakovich’s musical language, and outstanding pianistic authority.",
-      "title": "Jury comments",
-      "subtitle": "Shostakovich, Prelude and Fugue No. 24",
-      "meta": "PFA6 — Piano Artist Group",
-      "link": "about"
-    },
-    {
-      "id": "h5",
-      "media": "image",
-      "src": "stills/still_10.jpg",
-      "title": "The Transition",
-      "subtitle": "Official Selection",
-      "meta": "Almamoura Festival · Lift-Off Global Network Sessions · Screamstation Fest — 2026",
-      "link": "work/film"
-    },
-    {
-      "id": "h6",
-      "media": "cover",
-      "src": "covers/chopin-op25-12.jpg",
-      "title": "Chopin",
-      "subtitle": "Étude Op. 25 No. 12",
-      "meta": "Follow The Ana & Nikita Kushaev",
-      "link": "work/music"
-    },
-    {
-      "id": "h7",
-      "media": "quote",
-      "src": "photos/kimc-2026-1.jpg",
-      "quote": "Beautiful musical shape with an improvisatory nature.",
-      "title": "Jury comments",
-      "subtitle": "KIMC 2026",
-      "meta": "Kawai Thailand International Music Competition",
-      "link": "about"
-    },
-    {
-      "id": "h8",
-      "media": "image",
-      "src": "stills/still_14.jpg",
-      "title": "The Transition",
-      "subtitle": "Stills",
-      "meta": "2026",
-      "link": "work/film"
+      "id": "l4",
+      "media": "video",
+      "src": "home/set.mp4",
+      "poster": "home/set.jpg",
+      "title": "On set",
+      "subtitle": "",
+      "meta": "",
+      "link": "",
+      "focus": "60% 50%"
     }
   ],
   "music": [
@@ -114,7 +69,8 @@
       "cover": "covers/chopin-op25-12.jpg",
       "src": "chopin-op25-12.mp3",
       "duration": "2:51",
-      "spotify": ""
+      "spotify": "",
+      "anim": "dust"
     },
     {
       "id": "m2",
@@ -126,7 +82,8 @@
       "cover": "covers/shostakovich-pf-24.jpg",
       "src": "shostakovich-pf-24.mp3",
       "duration": "12:25",
-      "spotify": ""
+      "spotify": "",
+      "anim": "snow"
     },
     {
       "id": "m3",
@@ -150,19 +107,8 @@
       "cover": "covers/haydn-hob-xvi-49.jpg",
       "src": "haydn-hob-xvi-49.mp3",
       "duration": "16:14",
-      "spotify": ""
-    },
-    {
-      "id": "m5",
-      "type": "video",
-      "cat": "music",
-      "composer": "The Transition",
-      "title": "Trailer",
-      "credit": "",
-      "cover": "stills/still_01.jpg",
-      "src": "video/the-transition-trailer.mp4",
-      "duration": "0:36",
-      "ratio": "16/9"
+      "spotify": "",
+      "anim": "mist"
     },
     {
       "id": "m6",
@@ -174,7 +120,8 @@
       "cover": "covers/medtner-reminiscenza.jpg",
       "src": "medtner-reminiscenza.mp3",
       "duration": "13:22",
-      "spotify": ""
+      "spotify": "",
+      "anim": "dust"
     },
     {
       "id": "m7",
@@ -198,7 +145,8 @@
       "cover": "covers/granados-spanish-dances.jpg",
       "src": "granados-spanish-dances.mp3",
       "duration": "13:04",
-      "spotify": ""
+      "spotify": "",
+      "anim": "dust"
     },
     {
       "id": "m9",
@@ -210,7 +158,8 @@
       "cover": "covers/shostakovich-pf-4.jpg",
       "src": "shostakovich-pf-4.mp3",
       "duration": "8:16",
-      "spotify": ""
+      "spotify": "",
+      "anim": "dust"
     }
   ],
   "repertoire": [
@@ -524,6 +473,9 @@
         "role": "Based in",
         "value": "Dubai · Bangkok"
       }
+    ],
+    "honours": [
+      "Selected & Honored Mention — Screamstation Festival, 2026 · The Transition"
     ]
   },
   "press": [
@@ -600,7 +552,7 @@
       },
       {
         "label": "Languages",
-        "value": "English · Russian"
+        "value": "English"
       }
     ],
     "video": "video/contact-loop.mp4",
@@ -609,5 +561,94 @@
   "emptyText": {
     "education": "Teaching videos, masterclasses and articles will appear here from November 2026.",
     "aiFilms": "AI films are in production."
-  }
+  },
+  "heroArchive": [
+    {
+      "id": "h1",
+      "media": "video",
+      "src": "hero/transition-loop.mp4",
+      "poster": "hero/transition-loop.jpg",
+      "title": "The Transition",
+      "subtitle": "Film / Music / Direction",
+      "meta": "2026",
+      "link": "work/film"
+    },
+    {
+      "id": "h2",
+      "media": "video",
+      "src": "hero/kimc-loop.mp4",
+      "poster": "hero/kimc-loop.jpg",
+      "title": "Kawai International",
+      "subtitle": "Performance",
+      "meta": "Thailand, 2026",
+      "link": "work/performance",
+      "focus": "50% 65%"
+    },
+    {
+      "id": "h9",
+      "media": "poster",
+      "src": "photos/bacc-piano-recital.jpg",
+      "ratio": "1043/1508",
+      "title": "Piano Recital",
+      "subtitle": "Bangkok Art and Culture Centre",
+      "meta": "Bach · Rachmaninoff — Bangkok, Thailand",
+      "link": "work/performance"
+    },
+    {
+      "id": "h3",
+      "media": "cover",
+      "src": "covers/shostakovich-pf-24.jpg",
+      "title": "Shostakovich",
+      "subtitle": "Prelude and Fugue No. 24",
+      "meta": "Performance",
+      "link": "work/music"
+    },
+    {
+      "id": "h4",
+      "media": "quote",
+      "src": "photos/cover-letter-photo.jpg",
+      "quote": "This performance reflects rigorous preparation, a deep understanding of Shostakovich’s musical language, and outstanding pianistic authority.",
+      "title": "Jury comments",
+      "subtitle": "Shostakovich, Prelude and Fugue No. 24",
+      "meta": "PFA6 — Piano Artist Group",
+      "link": "about"
+    },
+    {
+      "id": "h5",
+      "media": "image",
+      "src": "stills/still_10.jpg",
+      "title": "The Transition",
+      "subtitle": "Official Selection",
+      "meta": "Almamoura Festival · Lift-Off Global Network Sessions · Screamstation Fest — 2026",
+      "link": "work/film"
+    },
+    {
+      "id": "h6",
+      "media": "cover",
+      "src": "covers/chopin-op25-12.jpg",
+      "title": "Chopin",
+      "subtitle": "Étude Op. 25 No. 12",
+      "meta": "Follow The Ana & Nikita Kushaev",
+      "link": "work/music"
+    },
+    {
+      "id": "h7",
+      "media": "quote",
+      "src": "photos/kimc-2026-1.jpg",
+      "quote": "Beautiful musical shape with an improvisatory nature.",
+      "title": "Jury comments",
+      "subtitle": "KIMC 2026",
+      "meta": "Kawai Thailand International Music Competition",
+      "link": "about"
+    },
+    {
+      "id": "h8",
+      "media": "image",
+      "src": "stills/still_14.jpg",
+      "title": "The Transition",
+      "subtitle": "Stills",
+      "meta": "2026",
+      "link": "work/film"
+    }
+  ]
 }
