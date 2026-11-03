@@ -48,14 +48,15 @@
       "link": ""
     },
     {
-      "id": "l6",
+      "id": "l7",
       "media": "video",
-      "src": "home/rain.mp4",
-      "poster": "home/rain.jpg",
-      "title": "Rain",
+      "src": "home/sheets.mp4",
+      "poster": "home/sheets.jpg",
+      "title": "Sheet music",
       "subtitle": "",
       "meta": "",
-      "link": ""
+      "link": "",
+      "focus": "50% 55%"
     },
     {
       "id": "l4",
