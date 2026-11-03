@@ -474,9 +474,7 @@
         "value": "Dubai · Bangkok"
       }
     ],
-    "honours": [
-      "Selected & Honored Mention — Screamstation Festival, 2026 · The Transition"
-    ]
+    "honours": []
   },
   "press": [
     {
@@ -500,6 +498,7 @@
       "title": "The Transition",
       "count": "3",
       "source": "Official Selection — Almamoura Festival, Lift-Off Global Network Sessions, Screamstation Fest, 2026",
+      "honour": "Selected & Honored Mention — Screamstation Festival, 2026",
       "quote": "",
       "image": "press/transition-poster.jpg"
     },
