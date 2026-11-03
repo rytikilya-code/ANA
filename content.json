@@ -121,7 +121,37 @@
       "src": "medtner-reminiscenza.mp3",
       "duration": "13:22",
       "spotify": "",
-      "anim": "dust"
+      "anim": "blink",
+      "lids": [
+        {
+          "src": "covers/fx/medtner-lid-a.png",
+          "x": 28.667,
+          "y": 7.25,
+          "w": 10.167,
+          "h": 6.833
+        },
+        {
+          "src": "covers/fx/medtner-lid-b.png",
+          "x": 44.083,
+          "y": 4.667,
+          "w": 11.333,
+          "h": 6.833
+        },
+        {
+          "src": "covers/fx/medtner-lid-c.png",
+          "x": 30.5,
+          "y": 60.167,
+          "w": 13.667,
+          "h": 9.0
+        },
+        {
+          "src": "covers/fx/medtner-lid-d.png",
+          "x": 71.583,
+          "y": 56.833,
+          "w": 19.667,
+          "h": 11.667
+        }
+      ]
     },
     {
       "id": "m7",
