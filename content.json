@@ -18,13 +18,34 @@
     {
       "id": "l2",
       "media": "video",
-      "src": "home/keys.mp4",
-      "poster": "home/keys.jpg",
+      "src": "home/keys_bw.mp4",
+      "poster": "home/keys_bw.jpg",
       "title": "Piano keys",
       "subtitle": "",
       "meta": "",
       "link": "",
       "focus": "50% 55%"
+    },
+    {
+      "id": "l8",
+      "media": "video",
+      "src": "home/waves.mp4",
+      "poster": "home/waves.jpg",
+      "title": "Waves",
+      "subtitle": "",
+      "meta": "",
+      "link": ""
+    },
+    {
+      "id": "l9",
+      "media": "video",
+      "src": "home/hammers.mp4",
+      "poster": "home/hammers.jpg",
+      "title": "Piano hammers",
+      "subtitle": "",
+      "meta": "",
+      "link": "",
+      "focus": "50% 45%"
     },
     {
       "id": "l5",
@@ -38,16 +59,6 @@
       "focus": "50% 30%"
     },
     {
-      "id": "l3",
-      "media": "video",
-      "src": "home/pages.mp4",
-      "poster": "home/pages.jpg",
-      "title": "Burning score",
-      "subtitle": "",
-      "meta": "",
-      "link": ""
-    },
-    {
       "id": "l7",
       "media": "video",
       "src": "home/sheets.mp4",
@@ -57,17 +68,6 @@
       "meta": "",
       "link": "",
       "focus": "50% 55%"
-    },
-    {
-      "id": "l4",
-      "media": "video",
-      "src": "home/set.mp4",
-      "poster": "home/set.jpg",
-      "title": "On set",
-      "subtitle": "",
-      "meta": "",
-      "link": "",
-      "focus": "60% 50%"
     }
   ],
   "music": [
@@ -120,7 +120,7 @@
       "src": "haydn-hob-xvi-49.mp3",
       "duration": "16:14",
       "spotify": "",
-      "anim": "mist"
+      "anim": "sky"
     },
     {
       "id": "m6",
@@ -192,7 +192,7 @@
       "src": "granados-spanish-dances.mp3",
       "duration": "13:04",
       "spotify": "",
-      "anim": "dust"
+      "anim": "wind"
     },
     {
       "id": "m9",
@@ -205,7 +205,7 @@
       "src": "shostakovich-pf-4.mp3",
       "duration": "8:16",
       "spotify": "",
-      "anim": "dust"
+      "anim": "shade"
     }
   ],
   "repertoire": [
@@ -474,7 +474,7 @@
     "photo": "photos/kimc-2026-2.jpg",
     "photoAlt": "Anastasia Kosheleva at the piano, Kawai Thailand International Music Competition 2026",
     "paragraphs": [
-      "Anastasia Kosheleva is a pianist, composer, director, and educator whose creative practice develops at the intersection of music, visual language, and storytelling.",
+      "Anastasia Kosheleva is a Kyrgyzstani pianist, educator, composer and first-time film director whose creative practice develops at the intersection of music, visual language, and storytelling.",
       "Classically trained as a pianist, she studied at the Gnessin Russian Academy of Music in Moscow, where she completed her higher musical education in 2020 and continued to develop her own artistic language through performance and interdisciplinary projects. During her studies, Anastasia was a recipient of the Scriabin Scholarship and became a laureate of international music competitions in Italy, the UAE, France, and countries across Asia.",
       "Her career has taken her across many countries and cultures. As a pianist, Anastasia has performed and worked in France, Italy, China, Kyrgyzstan, Thailand, and the United Arab Emirates, developing her artistic thinking through constant interaction with different cultures, traditions, and forms of art.",
       "Alongside her performing career, she has taught music for more than ten years. Her work has included individual lessons, masterclasses, and academic projects, while her own professional development continues through interaction with musicians, professors, and artists from different fields.",
