@@ -221,7 +221,8 @@
       "src": "franck-prelude-fugue-variation.mp3",
       "duration": "11:02",
       "spotify": "",
-      "anim": "dust"
+      "anim": "none",
+      "coverVideo": "covers/live/franck.mp4"
     },
     {
       "id": "m11",
@@ -248,7 +249,8 @@
       "src": "",
       "duration": "",
       "spotify": "",
-      "anim": "none"
+      "anim": "none",
+      "coverVideo": "covers/live/waldstein.mp4"
     }
   ],
   "repertoire": [
