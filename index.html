@@ -448,6 +448,15 @@ var ALIAS={work:"portfolio",music:"portfolio/music",video:"portfolio/film",film:
 var PLAY='<span class="tri" aria-hidden="true"></span>',PAUSE='<span class="bars" aria-hidden="true"><i></i><i></i></span>';
 var LOGO='<svg viewBox="0 0 318 70" aria-hidden="true"><use href="#ana"/></svg>';
 var VO=null;
+function link(u,label){u=String(u==null?"":u).trim();if(!u)return "";
+  if(/^(https?:|mailto:|tel:)/i.test(u))return u;
+  if(/^\/\//.test(u))return "https:"+u;
+  if(/^[^\s@\/]+@[^\s@\/]+\.[a-z]{2,}$/i.test(u))return "mailto:"+u;
+  if(/^\+?[\d\s().\-]{6,}$/.test(u)){var d=u.replace(/\D/g,"");return /whats|wa\b/i.test(label||"")?"https://wa.me/"+d:"tel:+"+d}
+  if(/^@?[\w.\-]+$/.test(u)&&!/^[\w\-]+\.[a-z]{2,}/i.test(u.replace(/^@/,""))){var n=u.replace(/^@/,""),L=label||"";
+    if(/insta/i.test(L))return "https://instagram.com/"+n;if(/you ?tube/i.test(L))return "https://youtube.com/@"+n;
+    if(/tik ?tok/i.test(L))return "https://tiktok.com/@"+n;if(/telegram|tg\b/i.test(L))return "https://t.me/"+n}
+  return "https://"+u.replace(/^\/+/,"")}
 function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]})}
 function toast(m){var t=document.createElement("div");t.className="toast";t.setAttribute("role","status");t.textContent=m;document.body.appendChild(t);setTimeout(function(){t.remove()},2200)}
 function mmss(t){t=Math.max(0,Math.floor(t||0));return Math.floor(t/60)+":"+String(t%60).padStart(2,"0")}
@@ -475,7 +484,7 @@ function tone(){var v=document.body.dataset.view,light=v==="about";if(v==="home"
 /* ---------- load ---------- */
 function start(d){C=d;build();route();opening()}
 function fallback(){var f=document.getElementById("content-fallback");if(f){try{return start(JSON.parse(f.textContent))}catch(e){}}$("#app").innerHTML='<p class="err">The site content could not be loaded. Please refresh the page.</p>'}
-function build(){$("#wa").href=C.site.whatsapp;moving=[];buildHome();buildWork();buildBio();buildContact();watch(document)}
+function build(){$("#wa").href=link(C.site.whatsapp,"whatsapp")||"#contact";moving=[];buildHome();buildWork();buildBio();buildContact();watch(document)}
 
 /* ---------- opening: the mark draws itself once per visit ---------- */
 function opening(){
@@ -539,7 +548,7 @@ function card(m){var a=m.type==="audio",ar=a?1:ratio(m.ratio,16/9),has=!!m.src;
   /* a cover can go up before its recording: then it shows "Recording coming soon" and nothing plays */
   return '<article class="track'+(has?'':' soon')+'" data-id="'+esc(m.id)+'" style="--ar:'+ar.toFixed(4)+'">'+(has?'<button class="media" data-act aria-label="'+esc((a?"Play ":"Watch ")+m.composer+", "+m.title)+'">':'<div class="media">')+'<img src="'+esc(m.cover)+'" alt="" loading="lazy" draggable="false">'+(m.coverVideo?'<video class="cv" muted loop playsinline preload="none" poster="'+esc(m.cover)+'" src="'+esc(m.coverVideo)+'" aria-hidden="true"></video>':'')+(a&&!m.coverVideo&&/^(snow|dust|mist|sky|wind)$/.test(m.anim||"")?'<canvas class="fx" data-fx="'+esc(m.anim)+'" aria-hidden="true"></canvas>':'')+(a&&!m.coverVideo&&FLOW[m.anim]?flowLayer(m):'')+(a&&m.anim==="shade"?'<img class="glow" src="'+esc(m.cover)+'" alt="" draggable="false" style="-webkit-mask-image:url(covers/fx/shost4-light-mask.png);mask-image:url(covers/fx/shost4-light-mask.png)">':'')+(a&&m.anim==="blink"&&m.lids?'<span class="eyes" aria-hidden="true">'+m.lids.map(function(l){return '<img class="lid" data-face="'+esc(l.face||"")+'" src="'+esc(l.src)+'" alt="" style="left:'+l.x+'%;top:'+l.y+'%;width:'+l.w+'%;height:'+l.h+'%">'}).join("")+'</span>':'')+(has?'</button>':'</div>')+
     '<div class="cap">'+(has?'<button class="rowplay" data-act aria-label="'+esc((a?"Play ":"Watch ")+m.composer)+'"><span class="disc">'+PLAY+'</span><span>'+(a?"Listen":"Watch")+' · '+esc(m.duration)+'</span></button>':'<span class="rowplay is-soon"><span class="disc">'+PLAY+'</span><span>Recording coming soon</span></span>')+'<b>'+esc(m.composer)+'</b><span>'+esc(m.title)+'</span>'+(m.credit?'<small>'+esc(m.credit)+'</small>':'')+
-    (a&&(has||m.spotify)?(m.spotify?'<a class="spot" href="'+esc(/^https?:\/\//i.test(m.spotify.trim())?m.spotify.trim():"https://"+m.spotify.trim().replace(/^\/+/,""))+'" target="_blank" rel="noopener">Listen on Spotify '+ARR+'</a>':'<button class="spot" data-soon>Listen on Spotify '+ARR+'</button>'):'')+'</div></article>'}
+    (a&&(has||m.spotify)?(m.spotify?'<a class="spot" href="'+esc(link(m.spotify))+'" target="_blank" rel="noopener">Listen on Spotify '+ARR+'</a>':'<button class="spot" data-soon>Listen on Spotify '+ARR+'</button>'):'')+'</div></article>'}
 function railBlock(id,items,label){
   return '<div class="rail" id="'+id+'" tabindex="0" aria-label="'+esc(label)+'"><div class="rail-in">'+items.map(card).join("")+'</div></div>'+
     '<div class="wrap"><div class="rail-bar"><button data-prev="'+id+'" aria-label="Back">←</button><div class="prog"><span data-prog="'+id+'"></span></div><button data-next="'+id+'" aria-label="Forward">→</button></div></div>'}
@@ -549,7 +558,7 @@ function bindRail(id){var r=$("#"+id);if(!r)return;var pr=$('[data-prog="'+id+'"
   pv.addEventListener("click",function(){r.scrollBy({left:-r.clientWidth*.7,behavior:reduce?"auto":"smooth"})});
   nx.addEventListener("click",function(){r.scrollBy({left:r.clientWidth*.7,behavior:reduce?"auto":"smooth"})})}
 function secHead(t){return '<div class="wrap"><h2 class="sec-title">'+esc(t)+'</h2></div>'}
-function tile(a,i,kind){var isV=/\.(mp4|webm|mov)$/i.test(a.src||""),href=!isV?(a.link||a.src||""):"";
+function tile(a,i,kind){var isV=/\.(mp4|webm|mov)(\?.*)?$/i.test(a.src||""),href=!isV?(a.link?link(a.link):(a.src||"")):"";
   var inner='<span class="m" style="--ar:'+esc(a.ratio||"16/9")+'">'+(a.poster?'<img src="'+esc(a.poster)+'" alt="" loading="lazy">':'')+'</span><h3>'+esc(a.title)+'</h3><span class="mute" style="font-size:14px">'+esc([kind,a.year,a.duration].filter(Boolean).join(" · "))+'</span>'+(a.description?'<p>'+esc(a.description)+'</p>':'');
   if(isV)return '<button class="tile" data-tile="'+i+'">'+inner+'</button>';if(href)return '<a class="tile" href="'+esc(href)+'" target="_blank" rel="noopener">'+inner+'</a>';return '<div class="tile">'+inner+'</div>'}
 function bindTiles(root,list){$$("[data-tile]",root).forEach(function(b){b.addEventListener("click",function(){var a=list[+b.dataset.tile];if(a)openVideo(a.src,a.title,a.kind||a.year||"",a.poster)})})}
@@ -567,7 +576,7 @@ function filmHTML(){
   return '<div class="wrap"><div class="tabs" role="tablist" style="margin-top:0"><button role="tab" id="t-film" aria-selected="true" aria-controls="p-film">'+esc(f.tab)+'</button><button role="tab" id="t-ai" aria-selected="false" aria-controls="p-ai">AI Films</button></div></div>'+
     '<div id="p-film" role="tabpanel" aria-labelledby="t-film">'+
       '<button class="feature" id="playTrailer" aria-label="Play the trailer of '+esc(f.title)+'" data-reveal><div class="bgm"><img src="'+esc(f.trailer.poster)+'" alt=""></div><div class="label"><div><span class="title">'+words(f.title)+'</span><div class="facts-line"><span>'+esc(f.kind)+'</span><span>'+esc(f.year)+'</span></div></div><span class="play"><span class="disc">'+PLAY+'</span>Trailer · '+esc(f.trailer.duration)+'</span></div></button>'+
-      '<div class="wrap"><div class="film-text"><div><p class="syn">'+esc(f.synopsis)+'</p><p class="credit">'+esc(f.credit)+'</p>'+(f.filmfreeway?'<p class="credit"><a href="'+esc(f.filmfreeway)+'" target="_blank" rel="noopener">FilmFreeway '+ARR+'</a></p>':'')+'</div><ul class="laurels">'+laurels+'</ul></div>'+
+      '<div class="wrap"><div class="film-text"><div><p class="syn">'+esc(f.synopsis)+'</p><p class="credit">'+esc(f.credit)+'</p>'+(f.filmfreeway?'<p class="credit"><a href="'+esc(link(f.filmfreeway))+'" target="_blank" rel="noopener">FilmFreeway '+ARR+'</a></p>':'')+'</div><ul class="laurels">'+laurels+'</ul></div>'+
       '<div class="stills">'+stills+'</div>'+
       '<div class="film-more"><figure class="poster"><img src="'+esc(f.poster)+'" alt="Poster of '+esc(f.title)+'" loading="lazy"><figcaption>Poster</figcaption></figure><figure><button class="bts" id="playBts" aria-label="Play: '+esc(f.bts.title)+'"><img src="'+esc(f.bts.poster)+'" alt="" loading="lazy"><span class="play"><span class="disc">'+PLAY+'</span>'+esc(f.bts.duration)+'</span></button><figcaption>'+esc(f.bts.title)+'</figcaption></figure></div></div>'+
     '</div><div class="wrap" id="p-ai" role="tabpanel" aria-labelledby="t-ai" hidden>'+(ai.length?'<div class="tiles">'+ai.map(function(a,i){return tile(a,i,"AI film")}).join("")+'</div>':'<p class="note">'+esc(empty.aiFilms||"")+'</p>')+'</div>';
@@ -657,7 +666,7 @@ function buildBio(){
 /* ---------- contact ---------- */
 function buildContact(){
   var c=C.contact,v=$("#v-contact");
-  var reach=c.channels.map(function(x){return '<div><span class="l">'+esc(x.label)+(x.copy?'<button class="copy" data-copy="'+esc(x.value)+'">Copy</button>':'')+'</span><a href="'+esc(x.href)+'"'+(/^https?:/.test(x.href)?' target="_blank" rel="noopener"':'')+'>'+esc(x.value)+'</a></div>'}).join("");
+  var reach=c.channels.map(function(x){return '<div><span class="l">'+esc(x.label)+(x.copy?'<button class="copy" data-copy="'+esc(x.value)+'">Copy</button>':'')+'</span><a href="'+esc(link(x.href||x.value,x.label))+'"'+(/^https?:/.test(link(x.href||x.value,x.label))?' target="_blank" rel="noopener"':'')+'>'+esc(x.value)+'</a></div>'}).join("");
   var where=c.facts.map(function(x){return '<span>'+esc(x.label)+' <b>'+esc(x.value)+'</b></span>'}).join("");
   var bg=c.video?'<div class="c-video" aria-hidden="true"><video muted loop playsinline autoplay preload="metadata" poster="'+esc(c.videoPoster||"")+'" src="'+esc(c.video)+'"></video></div>':(c.photo?'<figure class="c-photo" data-reveal><img src="'+esc(c.photo)+'" alt="'+esc(C.site.name)+'"></figure>':'');
   v.innerHTML=(c.video?bg:'')+'<div class="page wrap">'+(c.video?'':bg)+'<div class="cbox"><div data-reveal><h2 class="title" style="font-size:clamp(48px,9vw,160px);max-width:none">'+words(C.site.cta)+'</h2><p class="c-st facts-line">'+esc(c.statement)+'</p></div><div class="reach">'+reach+'</div></div><div class="where">'+where+'</div></div>'+foot();
